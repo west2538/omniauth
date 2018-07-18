@@ -26,12 +26,33 @@ module OmniAuth
     end
 
     def label_field(text, target)
-      @html << "\n<label for='#{target}'>#{text}:</label>"
+      # @html << "\n<label for='#{target}'>#{text}:</label>"
+      @html << ""
       self
     end
 
     def input_field(type, name)
-      @html << "\n<input type='#{type}' id='#{name}' name='#{name}'/>"
+      # @html << "<p><input style='width: 300px;' class='mb-2 form-control' type='#{type}' id='#{name}' name='#{name}' value='@another-guild.com'/></p>"
+      @html << "
+      <p>
+      <select style='width: 100%;' class='mb-2 custom-select mr-sm-2' id='#{name}' name='#{name}'>
+        <option selected value='townsguild@another-guild.com'>@another-guild.com</option>
+      </select>
+      </p>
+      "
+
+      # @html << "
+      # <div class='form-row align-items-center mb-2'>
+	    #   <input type='#{type}' name='#{name}' style='width: 105px;' class='float-left form-control'/>
+	    #   <div class='input-group-prepend mr-2' style='width: 40px;'>
+		  #     <div class='input-group-text'>@</div>
+	    #   </div>
+	    #   another-guild.com
+      # </div>
+      # "
+      # name = "guest@another-guild.com"
+
+      # @html << "\n<input type='#{type}' id='#{name}' name='#{name}'/>"
       self
     end
 
@@ -49,7 +70,8 @@ module OmniAuth
 
     def button(text)
       @with_custom_button = true
-      @html << "\n<button type='submit'>#{text}</button>"
+      # @html << "\n<button type='submit'>#{text}</button>"
+      @html << "<p class='mt-3 text-center'><input class='btn btn-primary btn-lg' type='submit' value='次へ進む'></p>"
     end
 
     def html(html)
@@ -69,14 +91,50 @@ module OmniAuth
       <html>
       <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
         <title>#{title}</title>
         #{css}
         #{header_info}
       </head>
       <body>
-      <h1>#{title}</h1>
-      <form method='post' #{"action='#{options[:url]}' " if options[:url]}noValidate='noValidate'>
-      HTML
+
+      <div class="mt-3" style="width: 320px; margin: auto;">
+
+      <div class="container">
+
+      <div class="jumbotron">
+
+        <h2>ルートを探せ</h2>
+
+        <p>『剣と魔法の時代』が終わり百数十年。平和な世界に新たな危機が迫っていた。</p>
+
+        <p>とにもかくにも「経済成長」。お金がものをいう世界では人々は生活費を稼ぐのに必死でいつしか冒険や本当の豊かさを忘れ、ただただ消費し、心が疲れていったのである。</p>
+    
+        <p>それにともない冒険のよりどころの「ギルド」も姿を消していった。</p>
+
+        <p>そんななか、人々は少しでも世の中を楽しくしようと、ギルドに行かなくてもだれでもどこでもスキマ時間に挑戦できるちょっとしたクエストを、遊びごころあふれる「サブクエスト」として発信していった。</p>
+
+        <p>するとそんなサブクエストをクリアしていく「冒険者」たちが次々と現れはじめたのである。</p>
+
+        <p>ここは『まちかどルート』。<br>急ぎすぎた足をいったん止め、新たなるルートを探す分岐点。</p>
+
+        <p>“真の魔王”を倒し、そして伝説となるであろう冒険者たちと人々のルートが、いまここから始まる。</p>
+
+        <p class="text-center">. . .</p>
+
+        <p class="text-center">. .</p>
+
+        <p class="text-center"></p>
+
+        <h2>さあ！ログイン</h2>
+ 
+        <form method='post' #{"action='#{options[:url]}' " if options[:url]}noValidate='noValidate'>
+ 
+        HTML
       self
     end
 
@@ -85,6 +143,13 @@ module OmniAuth
       @html << "\n<button type='submit'>Connect</button>" unless @with_custom_button
       @html << <<-HTML
       </form>
+      </div>
+
+      </div>
+
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
       </body>
       </html>
       HTML
