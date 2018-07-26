@@ -1,81 +1,65 @@
-/* body {
-  background: #ccc;
-  font-family: "Lucida Grande", "Lucida Sans", Helvetica, Arial, sans-serif;
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Yu Gothic", YuGothic, sans-serif;
 }
 
-h1 {
-  text-align: center;
-  margin: 30px auto 0px;
-  font-size: 18px;
-  padding: 10px 10px 15px;
-  background: #555;
-  color: white;
-  width: 320px;
-  border: 10px solid #444;
-  border-bottom: 0;
-  -moz-border-radius-topleft: 10px;
-  -moz-border-radius-topright: 10px;
-  -webkit-border-top-left-radius: 10px;
-  -webkit-border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
-
-h1, form {
-  -moz-box-shadow: 2px 2px 7px rgba(0,0,0,0.3);
-  -webkit-box-shadow: 2px 2px 7px rgba(0,0,0,0.3);
-}
-
-form {
-  background: white;
-  border: 10px solid #eee;
-  border-top: 0;
-  padding: 20px;
-  margin: 0px auto 40px;
+.box26 {
+  position: relative;
   width: 300px;
-  -moz-border-radius-bottomleft: 10px;
-  -moz-border-radius-bottomright: 10px;
-  -webkit-border-bottom-left-radius: 10px;
-  -webkit-border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  margin: 2em 0;
+  padding: 0.5em 1em;
+  border: solid 3px #95ccff;
+  border-radius: 8px;
 }
-
-label {
-  display: block;
+.box26 .box-title {
+  position: absolute;
+  display: inline-block;
+  top: -13px;
+  left: 10px;
+  padding: 0 9px;
+  line-height: 1;
+  font-size: 19px;
+  background: #FFF;
+  color: #95ccff;
   font-weight: bold;
-  margin-bottom: 5px;
+}
+.box26 p {
+  margin: 0; 
+  padding: 0;
 }
 
-input {
+.box26 h2 {
+  text-align: center;
+  margin: 30px auto;
   font-size: 18px;
-  padding: 4px 8px;
-  display: block;
-  margin-bottom: 10px;
-  width: 280px;
 }
 
-input#identifier, input#openid_url {
-  background: url(https://openid.net/images/login-bg.gif) no-repeat;
-  background-position: 0 50%;
-  padding-left: 18px;
+.box26 .square_btn {
+    position: relative;
+    display: inline-block;
+    padding: 0.25em 0.5em;
+    text-decoration: none;
+    color: #FFF;
+    background: #03A9F4;/*色*/
+    border: solid 1px #0f9ada;/*線色*/
+    border-radius: 4px;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.2);
+    text-shadow: 0 1px 0 rgba(0,0,0,0.2);
 }
 
-button {
-  font-size: 22px;
-  padding: 4px 8px;
-  display: block;
-  margin: 20px auto 0;
+.box26 .square_btn:active {/*押したとき*/
+    border: solid 1px #03A9F4;
+    box-shadow: none;
+    text-shadow: none;
 }
 
-fieldset {
-  border: 1px solid #ccc;
-  border-left: 0;
-  border-right: 0;
-  padding: 10px 0;
+.box26 .select-box select {
+  -webkit-appearance:none;
+  width: 100%;
+  height: 40px;
+  color: #000;
+  background-color: #fff;
+  line-height: 40px;
+  margin: 0px  0px  10px  0px; 
+  padding: 0px  0px  0px  10px;
 }
 
-fieldset input {
-  width: 260px;
-  font-size: 16px;
-} */

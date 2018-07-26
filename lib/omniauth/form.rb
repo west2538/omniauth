@@ -35,7 +35,7 @@ module OmniAuth
       # @html << "<p><input style='width: 300px;' class='mb-2 form-control' type='#{type}' id='#{name}' name='#{name}' value='@another-guild.com'/></p>"
       @html << "
       <p>
-      <select style='width: 100%;' class='mb-2 custom-select mr-sm-2' id='#{name}' name='#{name}'>
+      <select style='width: 100%;' class='select-box' id='#{name}' name='#{name}'>
         <option selected value='townsguild@another-guild.com'>@another-guild.com</option>
       </select>
       </p>
@@ -71,7 +71,7 @@ module OmniAuth
     def button(text)
       @with_custom_button = true
       # @html << "\n<button type='submit'>#{text}</button>"
-      @html << "<p class='mt-3 text-center'><input class='btn btn-primary btn-lg' type='submit' value='次へ進む'></p>"
+      @html << "<input class='square_btn' type='submit' value='次へ進む'>"
     end
 
     def html(html)
@@ -110,16 +110,9 @@ module OmniAuth
       </head>
       <body>
 
-      <!-- Bootstrap CSS -->
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+      <div class="box26">
 
-      <div class="mt-3" style="width: 320px; margin: auto;">
-
-      <div class="jumbotron">
-
-      <div class="container">
-
-        <h2>ルートを探せ</h2>
+        <span class="box-title">ルートを探せ</span>
 
         <p>『剣と魔法の時代』が終わり百数十年。平和な世界に新たな危機が迫っていた。</p>
 
@@ -154,12 +147,9 @@ module OmniAuth
       @html << "\n<button type='submit'>Connect</button>" unless @with_custom_button
       @html << <<-HTML
       </form>
-      </div>
 
       </div>
 
-      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
       </body>
       </html>
       HTML
