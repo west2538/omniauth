@@ -2,9 +2,12 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Yu Gothic", YuGothic, sans-serif;
 }
 
+.box12 {
+  width: 300px;
+}
 .box26 {
   position: relative;
-  width: 300px;
+  width: 280px;
   margin: 2em auto;
   padding: 0.5em 1em;
   border: solid 3px #95ccff;
@@ -23,38 +26,29 @@ body {
   font-weight: bold;
 }
 .box26 p {
-  margin: 20px 10px 10px 10px 
+  font-size: 18px;
+  margin: 20px 5px 10px 5px;
   padding: 0;
 }
 
 .box26 h2 {
   text-align: center;
   margin: 30px auto;
-  font-size: 18px;
+  font-size: 30px;
 }
 
 .box26 .square_btn {
-    position: relative;
-    display: inline-block;
-    margin: 20px 110px 30px 110px;
-    padding: 10px 20px 10px 20px;
+    display: block;
+    width: 160px;
+    padding: 0.8em;
+    text-align: center;
     text-decoration: none;
-    color: #FFF;
-    background: #03A9F4;/*色*/
-    border: solid 1px #0f9ada;/*線色*/
-    border-radius: 4px;
-    box-shadow: inset 0 1px 0 rgba(255,255,255,0.2);
-    text-shadow: 0 1px 0 rgba(0,0,0,0.2);
+    color: #2196F3;
+    border: 2px solid #2196F3;
+    border-radius: 3px;
+    transition: .4s;
 }
-
-.box26 .square_btn:active {/*押したとき*/
-    border: solid 1px #03A9F4;
-    box-shadow: none;
-    text-shadow: none;
+  .box26 .square_btn:hover {
+    background: #2196F3;
+    color: #fff;
 }
-
-.box26 .select-box select {
-  width: 80%;
-  height: 40px;
-}
-

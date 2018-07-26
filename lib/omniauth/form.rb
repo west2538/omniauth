@@ -34,12 +34,13 @@ module OmniAuth
     def input_field(type, name)
       # @html << "<p><input style='width: 300px;' class='mb-2 form-control' type='#{type}' id='#{name}' name='#{name}' value='@another-guild.com'/></p>"
       @html << "
-      <p>
-      <select style='width: 100%;' class='select-box' id='#{name}' name='#{name}'>
-        <option selected value='townsguild@another-guild.com'>@another-guild.com</option>
-      </select>
-      </p>
+      <input type='hidden' value='townsguild@another-guild.com' id='#{name}' name='#{name}'>
       "
+
+      # <select style='width: 100%;' class='select-box' id='#{name}' name='#{name}'>
+      #   <option selected value='townsguild@another-guild.com'>@another-guild.com</option>
+      # </select>
+      # </p>
 
       # @html << "
       # <div class='form-row align-items-center mb-2'>
@@ -110,6 +111,8 @@ module OmniAuth
       </head>
       <body>
 
+      <div class="box12">
+
       <div class="box26">
 
         <span class="box-title">ルートを探せ</span>
@@ -148,6 +151,7 @@ module OmniAuth
       @html << <<-HTML
       </form>
 
+      </div>
       </div>
 
       </body>
