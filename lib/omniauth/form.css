@@ -7,11 +7,10 @@ body {
 }
 .box26 {
   position: relative;
+  text-align: center;
   width: 280px;
-  margin: 2em auto;
+  margin: 3em auto;
   padding: 0.5em 1em;
-  border: solid 3px #95ccff;
-  border-radius: 8px;
 }
 .box26 .box-title {
   position: absolute;
@@ -21,8 +20,6 @@ body {
   padding: 0 9px;
   line-height: 1;
   font-size: 30px;
-  background: #FFF;
-  color: #95ccff;
   font-weight: bold;
 }
 .box26 p {
@@ -38,6 +35,8 @@ body {
 }
 
 .box26 .square_btn {
+    -webkit-appearance: none;
+    border-radius: 0;
     display: block;
     width: 160px;
     padding: 0.8em;

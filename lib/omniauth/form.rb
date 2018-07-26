@@ -98,16 +98,6 @@ module OmniAuth
         #{css}
         #{header_info}
 
-        <script>
-        $(document).on "page:change", ->
-            window.prevPageYOffset = window.pageYOffset
-            window.prevPageXOffset = window.pageXOffset
-          $(document).on "page:load", ->
-            if $(".fix-scroll").length > 0
-              $('.fix-scroll').hide().show() # force re-render -- having an issue with that on Chrome/OSX
-              window.scrollTo window.prevPageXOffset, window.prevPageYOffset
-        </script>
-
       </head>
       <body>
 
