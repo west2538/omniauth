@@ -4,12 +4,12 @@ body {
 
 .box12 {
   width: 300px;
+  margin: 3em auto;
 }
 .box26 {
   position: relative;
-  text-align: center;
   width: 280px;
-  margin: 3em auto;
+  margin: 2em auto;
   padding: 0.5em 1em;
 }
 .box26 .box-title {
@@ -36,14 +36,16 @@ body {
 
 .box26 .square_btn {
     -webkit-appearance: none;
-    border-radius: 0;
     display: block;
     width: 160px;
+    margin: auto;
     padding: 0.8em;
+    font-size: 20px;
     text-align: center;
     text-decoration: none;
     color: #2196F3;
     border: 2px solid #2196F3;
+    background-color: #fff;
     border-radius: 3px;
     transition: .4s;
 }
