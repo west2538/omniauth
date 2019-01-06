@@ -72,7 +72,7 @@ module OmniAuth
     def button(text)
       @with_custom_button = true
       # @html << "\n<button type='submit'>#{text}</button>"
-      @html << "<input class='square_btn' type='submit' value='次へ進む' data-disable-with='処理中..'>"
+      @html << "<button class='square_btn' type='submit' value='次へ進む' data-disable-with='処理中..'>"
     end
 
     def html(html)
