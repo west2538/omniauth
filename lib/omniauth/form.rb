@@ -37,11 +37,11 @@ module OmniAuth
 
       <div class='cp_iptxt'>
         <label class='ef'>
-        <input type='text' id='#{name}' name='#{name}' placeholder='ログインIDを入力してね'>
+        <input type='text' id='#{name}' name='#{name}' value='@another-guild.com' placeholder='インスタンスのドメインを入力'>
         </label>
       </div>
 
-      <span class='small'>アナザーギルド(another-guild.com)の冒険者はログインIDを「ユーザー名@another-guild.com」の形式でご入力ください。例: taroというユーザー名ならば「taro@another-guild.com」となります。それ以外のMastodonインスタンスのユーザーは「ユーザー名@インスタンスのドメイン」を入力してください。</span><br>
+      <span class='small'>アナザーギルド(another-guild.com)の冒険者は「@another-guild.com」のまま「次へ進む」ボタンを押してください。それ以外のMastodonインスタンスのユーザーは「@ + インスタンスのドメイン」を入力してから「次へ進む」ボタンを押してください。</span><br>
       <br>
       <br>
 
