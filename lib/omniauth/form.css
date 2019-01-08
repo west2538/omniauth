@@ -33,6 +33,7 @@ body {
   margin: 20px 5px 10px 5px;
   padding: 0;
   word-break: break-all;
+  text-justify: inter-ideograph;
 }
 
 .box26 h2 {
@@ -63,7 +64,7 @@ body {
 
 .cp_iptxt {
 	position: relative;
-	width: 80%;
+	width: 100%;
 	margin: 40px 3%;
 }
 .cp_iptxt input[type='text'] {
