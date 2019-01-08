@@ -35,8 +35,15 @@ module OmniAuth
       # @html << "<p><input style='width: 300px;' class='mb-2 form-control' type='#{type}' id='#{name}' name='#{name}' value='@another-guild.com'/></p>"
       @html << "
 
-      <input type='text' value='' id='#{name}' name='#{name}' class='form-control' style='width: 280px;'><br>
-      <span class='small'>アナザーギルド(another-guild.com)の冒険者は「ユーザー名@another-guild.com」をご入力ください。例: taroというユーザー名ならば「taro@another-guild.com」となります。それ以外のMastodonインスタンスのユーザーは「ユーザー名@インスタンスのドメイン」を入力してください。</span><br>
+      <input type='text' value='' id='#{name}' name='#{name}' class='form-control'><br>
+
+      <div class="cp_iptxt">
+        <label class="ef">
+        <input type="text" id='#{name}' name='#{name}' placeholder="ログインID">
+        </label>
+      </div>
+
+      <span class='small'>アナザーギルド(another-guild.com)の冒険者はログインIDを「ユーザー名@another-guild.com」の形式でご入力ください。例: taroというユーザー名ならば「taro@another-guild.com」となります。それ以外のMastodonインスタンスのユーザーは「ユーザー名@インスタンスのドメイン」を入力してください。</span><br>
       <br>
       <br>
 
