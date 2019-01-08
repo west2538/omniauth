@@ -28,6 +28,12 @@ body {
   padding: 0;
 }
 
+.box26 .small {
+  font-size: 13px;
+  margin: 20px 5px 10px 5px;
+  padding: 0;
+}
+
 .box26 h2 {
   text-align: center;
   margin: 30px auto;

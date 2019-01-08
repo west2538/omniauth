@@ -34,14 +34,16 @@ module OmniAuth
     def input_field(type, name)
       # @html << "<p><input style='width: 300px;' class='mb-2 form-control' type='#{type}' id='#{name}' name='#{name}' value='@another-guild.com'/></p>"
       @html << "
-      <input type='hidden' value='townsguild@another-guild.com' id='#{name}' name='#{name}'>
-      "
 
+      <input type='text' value='' id='#{name}' name='#{name}'><br>
+      <span class="small">アナザーギルド(another-guild.com)の冒険者は「ユーザー名@another-guild.com」をご入力ください。例: taroというユーザー名ならば「taro@another-guild.com」となります。それ以外のMastodonインスタンスのユーザーは「ユーザー名@インスタンスのドメイン」を入力してください。</span>
+
+      "
       # <select style='width: 100%;' class='select-box' id='#{name}' name='#{name}'>
       #   <option selected value='townsguild@another-guild.com'>@another-guild.com</option>
       # </select>
-      # </p>
 
+      # <input type='hidden' value='townsguild@another-guild.com' id='#{name}' name='#{name}'>
       # @html << "
       # <div class='form-row align-items-center mb-2'>
 	    #   <input type='#{type}' name='#{name}' style='width: 105px;' class='float-left form-control'/>
