@@ -37,9 +37,9 @@ module OmniAuth
 
       <input type='text' value='' id='#{name}' name='#{name}' class='form-control'><br>
 
-      <div class="cp_iptxt">
-        <label class="ef">
-        <input type="text" id='#{name}' name='#{name}' placeholder="ログインID">
+      <div class='cp_iptxt'>
+        <label class='ef'>
+        <input type='text' id='#{name}' name='#{name}' placeholder='ログインIDを入力してね'>
         </label>
       </div>
 
