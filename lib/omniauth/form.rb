@@ -35,8 +35,6 @@ module OmniAuth
       # @html << "<p><input style='width: 300px;' class='mb-2 form-control' type='#{type}' id='#{name}' name='#{name}' value='@another-guild.com'/></p>"
       @html << "
 
-      <input type='text' value='' id='#{name}' name='#{name}' class='form-control'><br>
-
       <div class='cp_iptxt'>
         <label class='ef'>
         <input type='text' id='#{name}' name='#{name}' placeholder='ログインIDを入力してね'>
@@ -48,6 +46,8 @@ module OmniAuth
       <br>
 
       "
+      # <input type='text' value='' id='#{name}' name='#{name}' class='form-control'><br>
+
       # <select style='width: 100%;' class='select-box' id='#{name}' name='#{name}'>
       #   <option selected value='townsguild@another-guild.com'>@another-guild.com</option>
       # </select>
