@@ -35,18 +35,16 @@ module OmniAuth
       # @html << "<p><input style='width: 300px;' class='mb-2 form-control' type='#{type}' id='#{name}' name='#{name}' value='@another-guild.com'/></p>"
       @html << "
 
-      <div class='cp_iptxt'>
+      <div class='cp_ipselect'>
       <label class='ef'>
-      <select name='example'>
-        <option id='#{name}' name='#{name}' value='@another-guild.com' selected>アナザーギルド</option>
-        <option id='#{name}' name='#{name}' value='@tokamstdn.jp'>十日町市のMastodon</option>
+      <select id='#{name}' name='#{name}'>
+        <option value='@another-guild.com' selected>アナザーギルド</option>
+        <option value='@tokamstdn.jp'>十日町市のMastodon</option>
       </select>
       </label>
       </div>
 
-      <span class='small'>上記以外のMastodonインスタンスのユーザーは下記のボックスに「@ + インスタンスのドメイン」を入力してから「次へ進む」ボタンを押してください。</span><br>
-      <br>
-      <br>
+      <span class='small'>上記以外のMastodonインスタンスのユーザーは下記のボックスに「@ + インスタンスのドメイン」を入力してから「次へ進む」ボタンを押してください。</span>
 
       <div class='cp_iptxt'>
         <label class='ef'>
