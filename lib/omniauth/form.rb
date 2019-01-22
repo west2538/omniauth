@@ -44,9 +44,11 @@ module OmniAuth
       </select>
       </label>
       </div>
+      <span class='small'>「その他」のMastodonインスタンスのユーザーは下記のボックスに「@ + インスタンスのドメイン」を入力してから「次へ進む」ボタンを押してください。</span><br>
+      <br>
       <div class='cp_iptxt'>
         <label class='ef'>
-        <input type='text' id='#{name}' name='#{name}' value='@another-guild.com' placeholder='インスタンスのドメインを入力'>
+        <input type='text' id='#{name}' name='#{name}' placeholder='インスタンスのドメインを入力'>
         </label>
       </div>
 
