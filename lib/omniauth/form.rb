@@ -141,7 +141,7 @@ module OmniAuth
         #{css}
         #{header_info}
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
       </head>
       <body>
 
