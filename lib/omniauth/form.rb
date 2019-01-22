@@ -36,16 +36,35 @@ module OmniAuth
       @html << "
 
       <div class='cp_iptxt'>
+      <label class='ef'>
+      <select name='example'>
+        <option id='#{name}' name='#{name}' value='@another-guild.com' selected>アナザーギルド</option>
+        <option id='#{name}' name='#{name}' value='@tokamstdn.jp'>十日町市のMastodon</option>
+      </select>
+      </label>
+      </div>
+
+      <span class='small'>上記以外のMastodonインスタンスのユーザーは下記のボックスに「@ + インスタンスのドメイン」を入力してから「次へ進む」ボタンを押してください。</span><br>
+      <br>
+      <br>
+
+      <div class='cp_iptxt'>
         <label class='ef'>
-        <input type='text' id='#{name}' name='#{name}' value='@another-guild.com' placeholder='インスタンスのドメインを入力'>
+        <input type='text' id='#{name}' name='#{name}' placeholder='@ + インスタンスのドメインを入力'>
         </label>
       </div>
 
-      <span class='small'>アナザーギルド(another-guild.com)の冒険者は「@another-guild.com」のまま「次へ進む」ボタンを押してください。それ以外のMastodonインスタンスのユーザーは「@ + インスタンスのドメイン」を入力してから「次へ進む」ボタンを押してください。</span><br>
-      <br>
-      <br>
-
       "
+      # <div class='cp_iptxt'>
+      #   <label class='ef'>
+      #   <input type='text' id='#{name}' name='#{name}' value='@another-guild.com' placeholder='インスタンスのドメインを入力'>
+      #   </label>
+      # </div>
+
+      # <span class='small'>アナザーギルド(another-guild.com)の冒険者は「@another-guild.com」のまま「次へ進む」ボタンを押してください。それ以外のMastodonインスタンスのユーザーは「@ + インスタンスのドメイン」を入力してから「次へ進む」ボタンを押してください。</span><br>
+      # <br>
+      # <br>
+
       # <input type='text' value='' id='#{name}' name='#{name}' class='form-control'><br>
 
       # <select style='width: 100%;' class='select-box' id='#{name}' name='#{name}'>
