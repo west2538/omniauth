@@ -56,7 +56,7 @@ module OmniAuth
       <script>
       $(document).ready(function(){
         $('#instance').on('change', function () {
-          var $selectedArea = $('#instance).val();
+          var $selectedArea = $('#instance').val();
           if ( $selectedArea == 'その他' ) {
             $('#input_text').attr('required', true);
             $('#input_text').attr('name', '#{name}');
