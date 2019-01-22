@@ -45,9 +45,8 @@ module OmniAuth
       </select>
       </label>
       </div>
-      <span class='small'>「その他」のMastodonインスタンスのユーザーは下記のボックスに「@ + インスタンスのドメイン」を入力してから「次へ進む」ボタンを押してください。</span><br>
-      <br>
-      <div class='cp_iptxt'>
+      <span class='small'>その他を選んだMastodonインスタンスのユーザーは下記のボックスに「@ + インスタンスのドメイン」を入力してから「次へ進む」ボタンを押してください。</span>
+      <div class='cp_iptxt2'>
         <label class='ef'>
         <input type='text' id='input_text' name='text' placeholder='インスタンスのドメインを入力'>
         </label>
