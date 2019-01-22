@@ -53,7 +53,6 @@ module OmniAuth
         </label>
       </div>
 
-      <script src='https://code.jquery.com/jquery-1.12.4.min.js'></script>
       <script>
       $(document).ready(function(){
         $('#instance').on('change', function () {
@@ -142,6 +141,7 @@ module OmniAuth
         #{css}
         #{header_info}
 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
       </head>
       <body>
 
