@@ -49,7 +49,7 @@ module OmniAuth
       <br>
       <div class='cp_iptxt'>
         <label class='ef'>
-        <input type='text' id='#{name}' name='#{name}' placeholder='インスタンスのドメインを入力'>
+        <input type='text' id='input_text' name='text' placeholder='インスタンスのドメインを入力'>
         </label>
       </div>
 
@@ -60,6 +60,7 @@ module OmniAuth
           var $selectedArea = $('#instance).val();
           if ( $selectedArea == 'その他' ) {
             $('#input_text').attr('required', true);
+            $('#input_text').attr('name', '#{name}');
           } else {
             $('#input_text').attr('required', false);
           }
