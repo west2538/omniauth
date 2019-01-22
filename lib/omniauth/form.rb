@@ -38,7 +38,8 @@ module OmniAuth
       <div class='cp_ipselect'>
       <label class='ef'>
       <select id='instance' name='#{name}' required>
-        <option value='@another-guild.com' selected>アナザーギルド</option>
+        <option value='' disabled selected style='display:none;'>インスタンスを選択</option>
+        <option value='@another-guild.com'>アナザーギルド</option>
         <option value='@tokamstdn.jp'>十日町市のMastodon</option>
         <option value='その他'>その他</option>
       </select>
