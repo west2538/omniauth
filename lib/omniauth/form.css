@@ -79,7 +79,7 @@ body {
 	border-radius: 4px;
 }
 .ef input[type='text']:focus {
-	border: 5px solid #da3c41;
+	border: 5px solid #4CAF50;
 	outline: none;
 }
 
@@ -99,5 +99,5 @@ body {
 	border-radius: 4px;
 }
 .ef select:focus {
-	border: 5px solid #da3c41;
+	border: 5px solid #4CAF50;
 	outline: none;
