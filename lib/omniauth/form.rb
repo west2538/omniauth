@@ -37,20 +37,32 @@ module OmniAuth
 
       <div class='cp_ipselect'>
       <label class='ef'>
-      <select id='#{name}' name='#{name}'>
+      <select id='instance' name='#{name}' required>
         <option value='@another-guild.com' selected>アナザーギルド</option>
         <option value='@tokamstdn.jp'>十日町市のMastodon</option>
+        <option value='その他'>その他</option>
       </select>
       </label>
       </div>
-
-      <span class='small'>上記以外のMastodonインスタンスのユーザーは下記のボックスに「@ + インスタンスのドメイン」を入力してから「次へ進む」ボタンを押してください。</span>
-
       <div class='cp_iptxt'>
         <label class='ef'>
-        <input type='text' id='#{name}' name='#{name}' placeholder='@ + インスタンスのドメインを入力'>
+        <input type='text' id='#{name}' name='#{name}' value='@another-guild.com' placeholder='インスタンスのドメインを入力'>
         </label>
       </div>
+
+      <script src='https://code.jquery.com/jquery-1.12.4.min.js'></script>
+      <script>
+      $(document).ready(function(){
+        $('#instance').on('change', function () {
+          var $selectedArea = $('#instance).val();
+          if ( $selectedArea == 'その他' ) {
+            $('#input_text').attr('required', true);
+          } else {
+            $('#input_text').attr('required', false);
+          }
+        });
+      });
+      </script>
 
       "
       # <div class='cp_iptxt'>
