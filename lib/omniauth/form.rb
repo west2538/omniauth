@@ -180,6 +180,7 @@ module OmniAuth
 
     def footer
       return self if @footer
+
       @html << "\n<button type='submit'>Connect</button>" unless @with_custom_button
       @html << <<-HTML
       </form>
