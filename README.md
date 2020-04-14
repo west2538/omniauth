@@ -2,14 +2,12 @@
 
 [![Gem Version](http://img.shields.io/gem/v/omniauth.svg)][gem]
 [![Build Status](http://img.shields.io/travis/omniauth/omniauth.svg)][travis]
-[![Dependency Status](http://img.shields.io/gemnasium/omniauth/omniauth.svg)][gemnasium]
 [![Code Climate](http://img.shields.io/codeclimate/github/omniauth/omniauth.svg)][codeclimate]
 [![Coverage Status](http://img.shields.io/coveralls/omniauth/omniauth.svg)][coveralls]
 [![Security](https://hakiri.io/github/omniauth/omniauth/master.svg)](https://hakiri.io/github/omniauth/omniauth/master)
 
 [gem]: https://rubygems.org/gems/omniauth
 [travis]: http://travis-ci.org/omniauth/omniauth
-[gemnasium]: https://gemnasium.com/omniauth/omniauth
 [codeclimate]: https://codeclimate.com/github/omniauth/omniauth
 [coveralls]: https://coveralls.io/r/omniauth/omniauth
 
@@ -121,6 +119,8 @@ Note that OmniAuth does not perform any actions beyond setting some
 environment information on the callback request. It is entirely up to
 you how you want to implement the particulars of your application's
 authentication flow.
+
+**Please note:** there is currently a CSRF vulnerability which affects OmniAuth (designated [CVE-2015-9284](https://nvd.nist.gov/vuln/detail/CVE-2015-9284)) that requires mitigation at the application level. More details on how to do this can be found on the [Wiki](https://github.com/omniauth/omniauth/wiki/Resolving-CVE-2015-9284).
 
 ## Configuring The `origin` Param
 The `origin` url parameter is typically used to inform where a user came from and where, should you choose to use it, they'd want to return to.
